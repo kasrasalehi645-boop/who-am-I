@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>who-am-I</title>
+</head>
+<body>
+    <h1> ?who-am-I</h1>
+    <p>!سلام به صفحه معرفی خودت خوش اومدی</p>
+    <div class="container">
+    <h2>معرفی خودت</h2>
+    <form id="userForm">
+        <label for="name">نام شما :</label>
+        <input type="text" id="name" placeholder="نام خود را وارد کنید" required>
+        <br>
+        <label for="age">سن شما :</label>
+        <input type="number" id="age" placeholder="سن خود را وارد کنید" required>
+        <br>
+        <label for="city">اهل کجا هستید ؟</label>
+        <input type="text" id="city" placeholder="نام شهر خود را را وارد کنید" required>
+        <br>
+        <label for="phone"> شماره تلفن :</label>
+        <input type="tel" id="phone" placeholder="شماره تماس خود را وارد کنید ">
+        <br>
+        <button type="submit">ثبت اطلاعات</button>
+    </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
