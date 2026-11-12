@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Panel | who-am-I?</title>
+</head>
+<body>
+    <div class="container">
+    <h1>پنل مدیریت</h1>
+    <p>ورود مدیر به سیستم</p>
+
+    <form id="loginForm">
+
+    <input type="email" id="email" placeholder="ایمیل مدیر" required>
+
+    <input type="password" id="password" placeholder="رمز عبور" required>
+
+    <button type="submit">ورود به پنل</button>
+    </form>
+    <p id="loginMessage"></p>
+    </div>
+    <div id="dashboard" style="display: none;">
+
+    <h2>داشبورد مدیریت</h2>
+
+    <p>تعداد کاربران ثبت‌شده:</p>
+    <h1 id="totalUsers">0</h1>
+
+    <button id="loadUsers">نمایش اطلاعات کاربران</button>
+
+    <div id="usersList"></div>
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="admin.js"></script>
+</body>
+</html>
